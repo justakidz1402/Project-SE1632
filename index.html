@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 </head>
+
 <body>
     <h1>Welcome to NodeJS</h1>
-    <h2>hi</h2>
+    <a href="#">Home page</a>
+
+    <!-- Grid System -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-4">row1-left-column</div>
+            <div class="col-sm-4">row1-right-column</div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-sm-3 order-sm-last">row2-left-column</div>
+            <div class="col-sm-3 order-sm-first">row2-right-column</div>
+            <div class="col-sm-6">row2-center-column</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">row3-left-column</div>
+            <div class="col-sm-4 offset-sm-2">row3-right-column</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">row4-left-column</div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">Banner1</div>
+                    <div class="col-md-4 d-sm-none d-md-block">Banner2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="assets/js/main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
